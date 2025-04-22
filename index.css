@@ -1,0 +1,173 @@
+nav {
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: #101010;
+  box-shadow: 0 4px 8px rgb(255, 1, 208, 0.5);
+  position: fixed;
+  z-index: 1000;
+}
+body {
+  padding: 8rem 2rem 4rem;
+  background-image: url("neon.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main {
+  display: flex;
+}
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: #101010;
+  box-shadow: 0 -4px 8px rgb(255, 1, 208, 0.5);
+  position: fixed;
+  z-index: 1000;
+}
+
+/*-------------- Party List Display -------------- */
+.party-search-container {
+  color: white;
+  width: 60%;
+  height: 30rem;
+  margin: 5rem auto;
+  padding: 1.5rem;
+  border: 1px solid rgb(255, 1, 208);
+  border-radius: 8px;
+  background-color: #101010;
+  box-shadow: 0 4px 8px rgb(255, 1, 208, 0.5);
+  overflow: auto;
+}
+
+#cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-grow: 1;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.party-card {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgb(255, 1, 208);
+  box-shadow: 0 4px 8px rgb(255, 1, 208, 0.3);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.party-card:hover {
+  transform: scale(1.02);
+}
+
+.party-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.party-card p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.party-card button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #ff005c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.party-card button:hover {
+  background-color: #d1004b;
+}
+
+/* #results-container {
+  width: 50rem;
+  max-height: 20rem;
+  margin: 0 auto;
+  padding: 5rem;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  background-color: #fefefe;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+} */
+
+/*-------------- Add a Party form -------------- */
+.form-container {
+  color: white;
+  width: 20rem;
+  height: 30rem;
+  max-width: 400px;
+  margin: 5rem auto;
+  margin-left: 0;
+  padding: 1.5rem;
+  border: 1px solid rgb(255, 1, 208);
+  border-radius: 8px;
+  background-color: #101010;
+  box-shadow: 0 4px 8px rgb(255, 1, 208, 0.5);
+}
+
+.form-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #5b5be5;
+  outline: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  background-color: rgb(255, 1, 208);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(255, 1, 208);
+}
