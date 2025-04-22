@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Party Planner</title>
     <link rel="stylesheet" href="index.css" />
-    <!-- <script src="index.js" defer></script> -->
+    <script src="index.js" defer></script>
   </head>
   <body>
     <nav>
@@ -14,49 +14,66 @@
     <main>
       <div class="party-search-container">
         <h1>Find a Party</h1>
-        <div class="results-container"></div>
+        <section id="results-container">
+          <button id="rmvBtn" type="click">Remove Party</button>
+          <output></output>
+          <div id="party-name">
+            <h2>Name</h2>
+            <output></output>
+          </div>
+          <div id="party-dateTime">
+            <h2>Date/Time</h2>
+            <output></output>
+          </div>
+          <div id="party-location">
+            <h2>Location</h2>
+            <output></output>
+          </div>
+          <div id="party-description">
+            <h2>Description</h2>
+            <output></output>
+          </div>
+        </section>
       </div>
       <div class="form-container">
         <form>
           <h1>Add a Party</h1>
-          <form>
-            <div class="form-group">
-              <label for="formGroupExampleInput">Title: </label>
-              <input
-                type="text"
-                class="form-control"
-                id="formGroupExampleInput"
-                placeholder="Name your event"
-              />
-            </div>
-            <div class="form-group">
-              <label for="formGroupExampleInput2">Date and Time:</label>
-              <input
-                type="text"
-                class="form-control"
-                id="formGroupExampleInput2"
-                placeholder="Provide date and time"
-              />
-            </div>
-            <div class="form-group">
-              <label for="formGroupExampleInput2">Location: </label>
-              <input
-                type="text"
-                class="form-control"
-                id="formGroupExampleInput2"
-                placeholder="Provide location"
-              />
-            </div>
-          </form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Title: </label>
+            <input
+              type="text"
+              class="form-control"
+              id="input-title"
+              placeholder="Name your event"
+            />
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Date and Time:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="input-datetime"
+              placeholder="Provide date and time"
+            />
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Location: </label>
+            <input
+              type="text"
+              class="form-control"
+              id="input-location"
+              placeholder="Provide location"
+            />
+          </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Description: </label>
             <textarea
               class="form-control"
-              id="exampleFormControlTextarea1"
+              id="input-description"
               rows="3"
             ></textarea>
           </div>
-          <button type="submit">Post Party</button>
+          <button type="submit" id="postParty">Post Party</button>
         </form>
       </div>
     </main>
